@@ -7,3 +7,54 @@
 .ui-dialog .ui-dialog-title {
   text-align: center;
 }
+
+//---------- HOME-WORK WIZARD STYLES -------------
+
+// type of test: sequence
+.homework-container-sequence-blocks {
+  display: block;
+}
+.homework-container-sequence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 2rem;
+  .homework-sequence-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    .homework-sequence-list-item {
+      background-color: #85ebf7;
+      box-shadow: 0px 1px #579da5;
+      border-radius: 3px;
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+      font-weight: bold;
+      user-select: none;
+      cursor: grab;
+      min-width: 4rem;
+      font-family: Arial;
+      font-size: 14pt;
+      &:hover {
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+      }
+    }
+  }
+}
+
+// type of test: list
+.homework-container-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// type of test: block
+.homework-container-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
