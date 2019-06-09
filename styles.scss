@@ -44,11 +44,37 @@
   }
 }
 
+//type of test global
+.dropdown-content-level {
+  display: inline-block;
+  min-height: 3.5rem;
+  max-width: 9em;
+  margin: 3px;
+  border-radius: 5px;
+  outline: 0;
+}
+.insertion-test-input {
+  min-width: 5rem;
+  min-height: 3.5rem;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 5px;
+  outline: 0;
+  padding: 0 3px;
+  margin: 3px;
+}
+
 // type of test: list
 .homework-container-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  .homework-choice-list-item {
+    padding: 10px;
+    font-family: Times New Roman;
+    font-size: 16pt;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+  }
 }
 
 // type of test: block
@@ -57,4 +83,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 10px;
+  font-family: Times New Roman;
+  font-size: 16pt;
+  color: rgb(68, 68, 68);
+  text-decoration: none;
+  line-height: 1.5;
+  p {
+    line-height: 1.5;
+  }
 }
