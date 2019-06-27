@@ -1,4 +1,6 @@
-//----------  MODAL FORMS HEADERS -------------
+//----------- GLOBAL --------------------------
+
+//----------  modal forms headers -------------
 
 .no-close-button .ui-dialog-titlebar-close {
   display: none;
@@ -6,6 +8,21 @@
 
 .ui-dialog .ui-dialog-title {
   text-align: center;
+}
+
+//---------- NAVIGATION BAR STYLES OVERRIDE --------
+
+.t-NavigationBar {
+  display: flex;
+  align-items: center;
+}
+
+//---------- LOGIN AND REGISTRATION FORMS --------
+
+.t-PageBody--login .t-Body {
+  .home-work-registration-link {
+    cursor: pointer;
+  }
 }
 
 //---------- HOME-WORK WIZARD STYLES -------------
