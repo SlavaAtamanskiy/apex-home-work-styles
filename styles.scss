@@ -10,11 +10,26 @@
   text-align: center;
 }
 
+//small devices
+@media (max-width: 650px) {
+  .has-username img {
+    display: none;
+  }
+}
+
 //---------- NAVIGATION BAR STYLES OVERRIDE --------
 
 .t-NavigationBar {
   display: flex;
   align-items: center;
+}
+
+.has-username {
+  .t-Button-badge {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
 }
 
 //---------- LOGIN AND REGISTRATION FORMS --------
