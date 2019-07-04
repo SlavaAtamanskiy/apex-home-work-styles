@@ -1,5 +1,13 @@
 //----------- GLOBAL --------------------------
 
+//-----------background image-----------------
+.t-PageBody--login .t-Body,
+.t-Body-main {
+    background: url("http://localhost:8085/apex/r/main/101/files/static/v72/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 //----------  modal forms headers -------------
 
 .no-close-button .ui-dialog-titlebar-close {
@@ -11,21 +19,41 @@
 }
 
 //small devices
-@media (max-width: 650px) {
-  .has-username img {
+@media (max-width: 640px) {
+  .t-Header-logo,
+  .t-NavigationBar .icon-only {
     display: none;
+  }
+  .t-Button--navBar .t-Button-badge {
+    position: static;
   }
 }
 
-//---------- NAVIGATION BAR STYLES OVERRIDE --------
+//Page headers
+.t-Body-title {
+    background-color: rgba(255, 255, 255, 0.2);
+    .t-Alert--horizontal, .t-Alert--wizard {
+       background-color: transparent;
+       color: #ffff;
+     }
+     .t-Alert--success.t-Alert--horizontal .t-Alert-icon {
+          background-color: rgba(59, 170, 44, .5);
+      }
+}
 
-.t-NavigationBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+//---------- NAVIGATION BAR STYLES OVERRIDE --------
+.t-Header-branding {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+    .t-NavigationBar {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-align: center;
+           -ms-flex-align: center;
+              align-items: center;
+    }
 }
 
 .has-username {
@@ -46,6 +74,33 @@
   .home-work-registration-link {
     cursor: pointer;
   }
+}
+
+.registration-form-center-display .t-Form-itemWrapper,
+.remember-registration-center,
+.registration-form-center {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+	   -webkit-box-pack: center;
+	       -ms-flex-pack: center;
+	           justify-content: center;
+}
+
+.radiobox-registration-form-center {
+    text-align: center;
+}
+
+.remember-registration-center .a-Icon {
+	    vertical-align: middle;
+	    vertical-align: -webkit-baseline-middle;
+}
+
+.remember-registration-center .t-Form--stretchInputs .t-Form-fieldContainer .apex-item-group,
+.remember-registration-center .t-Form-fieldContainer--stretchInputs .apex-item-group {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
 }
 
 //---------- HOME-WORK WIZARD STYLES -------------
@@ -105,7 +160,7 @@
 //type of test global
 .dropdown-content-level {
   display: inline-block;
-  min-height: 3.5rem;
+  min-height: 2.5rem;
   max-width: 9em;
   margin: 3px;
   border: 1px solid rgb(169, 169, 169);
@@ -115,7 +170,7 @@
 
 .insertion-test-input {
   min-width: 5rem;
-  min-height: 3.5rem;
+  min-height: 2.5rem;
   border: 1px solid rgb(169, 169, 169);
   border-radius: 5px;
   outline: 0;
