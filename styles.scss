@@ -20,15 +20,23 @@
 //---------- NAVIGATION BAR STYLES OVERRIDE --------
 
 .t-NavigationBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .has-username {
   .t-Button-badge {
     background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -47,30 +55,48 @@
   display: block;
 }
 .homework-container-sequence {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: inherit;
   padding: 2rem;
   .homework-sequence-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     list-style-type: none;
     .homework-sequence-list-item {
       background-color: #85ebf7;
-      box-shadow: 0px 1px #579da5;
+      -webkit-box-shadow: 0px 1px #579da5;
+              box-shadow: 0px 1px #579da5;
       border-radius: 3px;
+      border: 1px solid;
       padding: 10px;
       margin: 5px;
       text-align: center;
       font-weight: bold;
-      user-select: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      cursor: -webkit-grab;
       cursor: grab;
       min-width: 4rem;
       font-family: Arial;
       font-size: 14pt;
       &:hover {
-        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+        -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+                box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
       }
     }
   }
@@ -82,9 +108,11 @@
   min-height: 3.5rem;
   max-width: 9em;
   margin: 3px;
+  border: 1px solid rgb(169, 169, 169);
   border-radius: 5px;
   outline: 0;
 }
+
 .insertion-test-input {
   min-width: 5rem;
   min-height: 3.5rem;
@@ -97,9 +125,15 @@
 
 // type of test: list
 .homework-container-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   .homework-choice-list-item {
     padding: 10px;
     font-family: Times New Roman;
@@ -111,10 +145,19 @@
 
 // type of test: block
 .homework-container-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 10px;
   font-family: Times New Roman;
   font-size: 16pt;
