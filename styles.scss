@@ -27,12 +27,22 @@
   .t-Button--navBar .t-Button-badge {
     position: static;
   }
+  .hw-block-test-panel .t-Alert-wrap {
+    display: none;
+  }
+  .home-work-check-box .t-Form-itemWrapper {
+    justify-content: center;
+  }
+  .home-work-user-roles {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-//Page headers
+//Page headers (not modals)
 .t-Body-title {
-    background-color: rgba(255, 255, 255, 0.2);
-    .t-Alert--horizontal, .t-Alert--wizard {
+    .t-Alert--horizontal,
+    .t-Alert--wizard  {
        background-color: transparent;
        color: #ffff;
      }
@@ -40,6 +50,30 @@
           background-color: rgba(59, 170, 44, .5);
       }
 }
+
+.t-Footer-version {
+    color: #ffff;
+}
+
+.t-Body-title,
+.t-Footer {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*
+//----------shiny forms' header and footer  ---------
+.t-Body-title,
+.t-Footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, white 75%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.t-Body-title:hover,
+.t-Footer:hover {
+    background-position: right center;
+}*/
 
 //---------- NAVIGATION BAR STYLES OVERRIDE --------
 .t-Header-branding {
@@ -97,7 +131,8 @@
 }
 
 .remember-registration-center .t-Form--stretchInputs .t-Form-fieldContainer .apex-item-group,
-.remember-registration-center .t-Form-fieldContainer--stretchInputs .apex-item-group {
+.remember-registration-center .t-Form-fieldContainer--stretchInputs .apex-item-group,
+.home-work-check-box .apex-item-checkbox {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
