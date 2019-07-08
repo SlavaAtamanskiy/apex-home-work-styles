@@ -31,11 +31,18 @@
     display: none;
   }
   .home-work-check-box .t-Form-itemWrapper {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .home-work-user-roles {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -51,29 +58,21 @@
       }
 }
 
+.a-IRR-tableContainer .js-stickyTableHeader.is-stuck {
+   top: 48px !important;
+}
+
+.t-Body-title,
+.t-Footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: top 1.5s;
+    -o-transition: top 1.5s;
+    transition: top 1.5s;
+}
+
 .t-Footer-version {
     color: #ffff;
 }
-
-.t-Body-title,
-.t-Footer {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/*
-//----------shiny forms' header and footer  ---------
-.t-Body-title,
-.t-Footer {
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: 0.5s;
-    background-size: 200% auto;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, white 75%, rgba(255, 255, 255, 0.2) 100%);
-}
-
-.t-Body-title:hover,
-.t-Footer:hover {
-    background-position: right center;
-}*/
 
 //---------- NAVIGATION BAR STYLES OVERRIDE --------
 .t-Header-branding {
