@@ -145,6 +145,18 @@
 
 //---------- HOME-WORK WIZARD STYLES -------------
 
+//container
+.home-work-test-container-global {
+   h2 {
+     text-align:center;
+     font-weight: bold;
+     font-family: Times New Roman;
+   }
+ .home-work-test-description {
+	   text-align:center;
+   }
+}
+
 // type of test: sequence
 .homework-container-sequence-blocks {
   display: block;
@@ -228,6 +240,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          .homework-choice-list-with-image {
+               display: -webkit-box;
+               display: -ms-flexbox;
+               display: flex;
+               -webkit-box-orient: horizontal;
+               -webkit-box-direction: normal;
+                   -ms-flex-flow: row wrap;
+                       flex-flow: row wrap;
+               -webkit-box-align: baseline;
+                   -ms-flex-align: baseline;
+                       align-items: baseline;
+               -ms-flex-pack: distribute;
+                   justify-content: space-around;
+               list-style: none;
+               li {
+                 padding: 2.5rem;
+               }
+          }
   .homework-choice-list-item {
     padding: 10px;
     font-family: Times New Roman;
