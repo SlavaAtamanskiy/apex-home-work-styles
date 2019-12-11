@@ -44,6 +44,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .t-Button--mobileHideLabel .t-Icon {
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+  .t-Button--mobileHideLabel .t-Button-label {
+    display: none;
+  }
 }
 
 //Page headers (not modals)
