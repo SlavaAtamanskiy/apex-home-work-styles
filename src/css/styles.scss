@@ -8,6 +8,15 @@
     background-size: cover;
 }
 
+//----------  protected from substitution text
+td {
+  .home-work-not-editable {
+    padding: 3px;
+    background-color: rgb(172, 245, 163);
+    border-radius: 3px;
+  }
+}
+
 //----------  modal forms headers -------------
 
 .no-close-button .ui-dialog-titlebar-close {
@@ -31,18 +40,10 @@
     display: none;
   }
   .home-work-check-box .t-Form-itemWrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .home-work-user-roles {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .t-Button--mobileHideLabel .t-Icon {
     margin-right: 0!important;
@@ -75,8 +76,6 @@
 .t-Body-title,
 .t-Footer {
     background-color: rgba(255, 255, 255, 0.2);
-    -webkit-transition: top 1.5s;
-    -o-transition: top 1.5s;
     transition: top 1.5s;
 }
 
@@ -86,9 +85,7 @@
 
 //---------- NAVIGATION BAR STYLES OVERRIDE --------
 .t-Header-branding {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    justify-content: space-between;
     .t-Header-logo-link {
          span {
             font-family: Segoe Print;
@@ -96,24 +93,16 @@
          }
     }
     .t-NavigationBar {
-         display: -webkit-box;
-         display: -ms-flexbox;
          display: flex;
-         -webkit-box-align: center;
-           -ms-flex-align: center;
-              align-items: center;
+         align-items: center;
     }
 }
 
 .has-username {
   .t-Button-badge {
     background-color: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -128,12 +117,8 @@
 .registration-form-center-display .t-Form-itemWrapper,
 .remember-registration-center,
 .registration-form-center {
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
-	   -webkit-box-pack: center;
-	       -ms-flex-pack: center;
-	           justify-content: center;
+   justify-content: center;
 }
 
 .radiobox-registration-form-center {
@@ -141,16 +126,13 @@
 }
 
 .remember-registration-center .a-Icon {
-	    vertical-align: middle;
-	    vertical-align: -webkit-baseline-middle;
+	  vertical-align: middle;
 }
 
 .remember-registration-center .t-Form--stretchInputs .t-Form-fieldContainer .apex-item-group,
 .remember-registration-center .t-Form-fieldContainer--stretchInputs .apex-item-group,
 .home-work-check-box .apex-item-checkbox {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    flex-grow: 0;
 }
 
 //---------- HOME-WORK WIZARD STYLES -------------
@@ -172,47 +154,30 @@
   display: block;
 }
 .homework-container-sequence {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: inherit;
   padding: 2rem;
   .homework-sequence-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
     list-style-type: none;
     .homework-sequence-list-item {
       background-color: #85ebf7;
-      -webkit-box-shadow: 0px 1px #579da5;
-              box-shadow: 0px 1px #579da5;
+      box-shadow: 0px 1px #579da5;
       border-radius: 3px;
       padding: 10px;
       margin: 5px;
       text-align: center;
       font-weight: bold;
-      -webkit-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-      cursor: -webkit-grab;
+      user-select: none;
       cursor: grab;
       min-width: 4rem;
       font-family: Arial;
       font-size: 14pt;
       &:hover {
-        -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
-                box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
       }
     }
   }
@@ -241,28 +206,14 @@
 
 // type of test: list
 .homework-container-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
           .homework-choice-list-compact {
-               display: -webkit-box;
-               display: -ms-flexbox;
                display: flex;
-               -webkit-box-orient: horizontal;
-               -webkit-box-direction: normal;
-                   -ms-flex-flow: row wrap;
-                       flex-flow: row wrap;
-               -webkit-box-align: baseline;
-                   -ms-flex-align: baseline;
-                       align-items: baseline;
-               -ms-flex-pack: distribute;
-                   justify-content: space-around;
+               flex-flow: row wrap;
+               align-items: baseline;
+               justify-content: space-around;
                list-style: none;
                li {
                  padding: 2.5rem;
@@ -283,19 +234,10 @@
 
 // type of test: block
 .homework-container-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 10px;
   font-family: Times New Roman;
   font-size: 16pt;
