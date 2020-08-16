@@ -402,8 +402,12 @@
     
     return this.each( function() {
       
-      $(this).select( function() {
+      //rigth click event
+      $(this).contextmenu( function(e) {
         
+        //don't show context menu on textarea fields
+        e.preventDefault();
+
         let sel, range, text, el, val, confirmMsg;
         
         confirmMsg = 'Закріпити виділений текст?'
